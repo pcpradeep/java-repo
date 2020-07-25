@@ -1,0 +1,95 @@
+IATA Airport Code,City Name,Country Name,Region
+ADL,Adelaide,Australia,Southwest Pacific
+AKL,Auckland,New Zealand,Southwest Pacific
+AMD,Ahmedabad,India,West Asia & Africa
+AMS,Amsterdam,The Netherlands,Europe
+ARN,Stockholm,Sweden,Europe
+BCN,Barcelona,Spain,Europe
+BDO,Bandung,Indonesia,South East Asia
+BKI,Kota Kinabalu,Malaysia,South East Asia
+BKK,Bangkok,Thailand,South East Asia
+BLR,Bengaluru,India,West Asia & Africa
+BNE,Brisbane,Australia,Southwest Pacific
+BOM,Mumbai,India,West Asia & Africa
+BPN,Balikpapan,Indonesia,South East Asia
+BWN,Bandar Seri Begawan,Brunei,South East Asia
+CAN,Guangzhou,China,North Asia
+CBR,Canberra,Australia,Southwest Pacific
+CCU,Kolkata,India,West Asia & Africa
+CDG,Paris,France,Europe
+CEB,Cebu,The Philippines,South East Asia
+CGK,Jakarta,Indonesia,South East Asia
+CHC,Christchurch,New Zealand,Southwest Pacific
+CKG,Chongqing,China,North Asia
+CMB,Colombo,Sri Lanka,West Asia & Africa
+CNS,Cairns,Australia,Southwest Pacific
+COK,Kochi,India,West Asia & Africa
+CPH,Copenhagen,Denmark,Europe
+CPT,Cape Town,South Africa,West Asia & Africa
+CTS,Sapporo,Japan,North Asia
+CTU,Chengdu,China,North Asia
+DAC,Dhaka,Bangladesh,West Asia & Africa
+DAD,Da Nang,Vietnam,South East Asia
+DEL,Delhi,India,West Asia & Africa
+DME,Moscow,Russia,Europe
+DPS,Denpasar Bali,Indonesia,South East Asia
+DRW,Darwin,Australia,Southwest Pacific
+DUS,Dusseldorf,Germany,Europe
+DVO,Davao,The Philippines,South East Asia
+DXB,Dubai,United Arab Emirates,West Asia & Africa
+EWR,New York (Newark),The United States,The Americas
+FCO,Rome,Italy,Europe
+FRA,Frankfurt,Germany,Europe
+FUK,Fukuoka,Japan,North Asia
+HAN,Hanoi,Vietnam,South East Asia
+HIJ,Hiroshima,Japan,North Asia
+HKG,Hong Kong,Hong Kong SAR- China,North Asia
+HKT,Phuket,Thailand,South East Asia
+HND,Tokyo (Haneda),Japan,North Asia
+HYD,Hyderabad,India,West Asia & Africa
+IAH,Houston,The United States,The Americas
+ICN,Seoul,South Korea,North Asia
+IST,Istanbul,Turkey,Europe
+JFK,New York (JFK),The United States,The Americas
+JNB,Johannesburg,South Africa,West Asia & Africa
+JOG,Yogyakarta,Indonesia,South East Asia
+KIX,Osaka,Japan,North Asia
+KNO,Medan,Indonesia,South East Asia
+KTM,Kathmandu,Nepal,West Asia & Africa
+KUL,Kuala Lumpur,Malaysia,South East Asia
+LAX,Los Angeles,The United States,The Americas
+LHR,London (Heathrow),The United Kingdom,Europe
+LOP,Lombok,Indonesia,South East Asia
+MAA,Chennai,India,West Asia & Africa
+MAN,Manchester,The United Kingdom,Europe
+MDC,Manado,Indonesia,South East Asia
+MDL,Mandalay,Myanmar,South East Asia
+MEL,Melbourne,Australia,Southwest Pacific
+MLE,Male,Maldives,West Asia & Africa
+MNL,Manila,The Philippines,South East Asia
+MUC,Munich,Germany,Europe
+MXP,Milan,Italy,Europe
+NGO,Nagoya,Japan,North Asia
+NRT,Tokyo (Narita),Japan,North Asia
+PEK,Beijing,China,North Asia
+PEN,Penang,Malaysia,South East Asia
+PER,Perth,Australia,Southwest Pacific
+PNH,Phnom Penh,Cambodia,South East Asia
+PUS,Busan,South Korea,North Asia
+PVG,Shanghai,China,North Asia
+REP,Siem Reap,Cambodia,South East Asia
+RGN,Yangon,Myanmar,South East Asia
+SEA,Seattle,The United States,The Americas
+SFO,San Francisco,The United States,The Americas
+SGN,Ho Chi Minh City,Vietnam,South East Asia
+SIN,Singapore,Singapore,South East Asia
+SRG,Semarang,Indonesia,South East Asia
+SUB,Surabaya,Indonesia,South East Asia
+SYD,Sydney,Australia,Southwest Pacific
+SZX,Shenzhen,China,North Asia
+TPE,Taipei,Taiwan- China,North Asia
+UPG,Makassar,Indonesia,South East Asia
+USM,Koh Samui,Thailand,South East Asia
+WLG,Wellington,New Zealand,Southwest Pacific
+XMN,Xiamen,China,North Asia
+ZRH,Zurich,Switzerland,Europe

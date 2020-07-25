@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Practicereport_subreport1_subreport1" pageWidth="1024" pageHeight="802" columnWidth="1024" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="44eef393-d7c1-4b88-8282-cbaeb7efd565">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="route" class="java.lang.String"/>
+	<field name="month" class="java.lang.String"/>
+	<field name="dates" class="java.lang.String"/>
+	<field name="arrivalTime" class="java.lang.String"/>
+	<field name="departureTime" class="java.lang.String"/>
+	<field name="flightNumber" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="47" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="24" y="12" width="201" height="27" uuid="d943f3d0-2a2b-42ee-8be9-d4ce1565cc48"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{route}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="12" width="100" height="27" uuid="ca570ca2-4089-4696-9b79-7a1bdd60872b"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="335" y="12" width="142" height="30" uuid="70b7f1e7-82af-439d-9aeb-3b19f03e44e1"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Proxima Nova Rg" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dates}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="12" width="80" height="27" uuid="10d450ab-d09d-4c78-881c-f9805ba5566e"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{arrivalTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="657" y="12" width="80" height="27" uuid="c9714db8-b899-4a7b-8af9-9676369736f0"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departureTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="777" y="12" width="80" height="27" uuid="c0ded01d-8574-4136-8d55-ab46a3f6d399"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{flightNumber}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="24" y="0" width="880" height="1" forecolor="#EEEEEE" uuid="2c78ee20-2501-462f-87f7-09194ad31dad">
+					<printWhenExpression><![CDATA[$F{route}.length()> 0]]></printWhenExpression>
+				</reportElement>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

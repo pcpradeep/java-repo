@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Practicereport_subreport1" pageWidth="1024" pageHeight="802" columnWidth="1024" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7ea6e5eb-4708-466c-a002-5af3f69d7872">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="161"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["E:\\JasperReportJrxml\\"]]></defaultValueExpression>
+	</parameter>
+	<field name="tableName" class="java.lang.String"/>
+	<field name="rowList" class="java.util.List"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="200" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="70" width="200" height="79" uuid="9ded09d4-14c5-4277-8b59-5af64c184c14"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{rowList})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Practicereport_subreport1_subreport1.jasper"]]></subreportExpression>
+			</subreport>
+			<line>
+				<reportElement x="24" y="69" width="880" height="1" forecolor="#6E82A6" uuid="21651306-b3fc-4554-9690-62e4e1cfd3be"/>
+			</line>
+			<staticText>
+				<reportElement x="515" y="40" width="101" height="27" forecolor="#222222" uuid="2c71dd7a-c0fd-4e89-87a4-86fcf9cb3413"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Departure Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="40" width="51" height="27" forecolor="#222222" uuid="58b24f68-9f4f-4097-a1b2-bfabf6556c23"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Route]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="657" y="40" width="85" height="27" forecolor="#222222" uuid="25eeaaa1-8155-40e2-a2be-ac54d520d5b2"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Arrival Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="777" y="40" width="95" height="27" forecolor="#222222" uuid="3befd992-258f-42ec-b06e-63563c8e46a9"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Flight Number]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="24" y="0" width="232" height="27" forecolor="#00266B" uuid="dfe15345-d6c9-46b9-8ef1-c0f818289058"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tableName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="227" y="40" width="41" height="27" forecolor="#222222" uuid="8f4ec80b-fa47-4938-a686-9c81a1229f76"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="40" width="51" height="27" forecolor="#222222" uuid="60c0b69e-a4fd-46dc-a874-2a503c6d2de7"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date(s)]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="24" y="168" width="880" height="1" forecolor="#D1D1D1" uuid="fbb63666-5d8f-455e-8a39-6652c2a97b09"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

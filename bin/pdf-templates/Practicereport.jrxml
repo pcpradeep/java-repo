@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Practicereport" pageWidth="990" pageHeight="1440" columnWidth="950" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0eb5d4d9-2000-49ab-9068-b5b615f5dbdc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="299"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="46e29498-4118-4d74-a70a-ffef8af770a1"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["E:\\JasperReportJrxml\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="subreportParameter" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="reportHeader" class="java.lang.String"/>
+	<parameter name="region" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="subReportHeader" class="java.lang.String"/>
+	<field name="tabList" class="java.util.List"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="112" splitType="Stretch">
+			<image>
+				<reportElement x="763" y="5" width="150" height="85" uuid="eaae0a0e-50e7-498e-8ff4-4f6f828e55c1">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} > 1]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["F:\\SAAFiles\\images\\sia_logo_doubleLine.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement isPrintRepeatedValues="false" x="33" y="38" width="458" height="27" forecolor="#00266B" uuid="da06985e-2ff3-4fb0-a68f-5172de75251e"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportHeader}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement isPrintRepeatedValues="false" x="33" y="67" width="291" height="27" forecolor="#666666" uuid="0ff094e3-c460-4df3-919a-89639f156280"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subReportHeader}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="743" y="5" width="220" height="100" uuid="e7d66cb8-4444-4734-98d9-a3c431aa244f">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["F:\\SAAFiles\\images\\sia_logo_doubleLine.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+			<line>
+				<reportElement isPrintRepeatedValues="false" x="33" y="28" width="880" height="1" forecolor="#6E82A6" uuid="e3953f95-a2dd-4dd6-98f6-80ead090a444">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" mode="Opaque" x="403" y="21" width="174" height="27" forecolor="#00266B" uuid="4acba88d-8ff2-42f9-bc4a-2d6fb413cf0c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Proxima Nova Rg" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{region}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="106" splitType="Stretch">
+			<subreport>
+				<reportElement x="10" y="4" width="200" height="100" uuid="2a29914a-0375-4763-b968-be2f9f14fab4"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{tabList})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Practicereport_subreport1.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="263" y="19" width="800" height="20" forecolor="#666666" uuid="195ee5a8-e4aa-4c39-926c-7a2683f48520"/>
+				<textElement>
+					<font fontName="Proxima Nova Rg" size="12"/>
+				</textElement>
+				<text><![CDATA[© 2020 Singapore Airlines. All Rights Reserved. Singapore Co. Reg. No. 197200078R]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
